@@ -38,7 +38,7 @@ t4 = create_sprite("fish",x4,y4)
 
 # # Section 4 - Racing
 # # TODO - set how much each variable changes by and increase the number of repeats to at least 30
-# # TODO - explain here which sprites are faster or slower
+# # TODO - explain here which sprites are faster or slower the winner could ether be x1 or x4 but there is a higher chance of it being x4 because it could ether go 5 or 6 steps and that is higher than x1 which could ether go 1 or 6 steps.
 for i in range(30):
 	x1 += random.randint(1,6)
 	x2 += random.randint(2,5)
@@ -54,10 +54,15 @@ for i in range(30):
 # # Section 5 - Winner
 # # TODO - complete the elif for player 2 winning
 # # TODO - write another elif for player 3 and player 4
-# if x1 >= x2 and x1 >= x3 and x1 >= x4:
-# 	print("player 1 wins!")
-# elif
-# 	print("player 2 wins!")
+if x1 >= x2 and x1 >= x3 and x1 >= x4:
+	print("player 1 wins!")
+elif x2>= x1 and x2>=x3 and x2 >= x4 :
+	print("player 2 wins!")
+elif x3 >= x1 and x3 >= x2 and x3 >= x4:
+	print("player 3 wins!")
+elif x4>= x1 and x4>=x2 and x4 >= x3 :
+	print("player 4 wins!")
+
 
 
 
