@@ -38,12 +38,49 @@ def move_up () :
 	s1.setheading (90)
 	s1.forward (2)
 
-window.onkeypress (move_down,"down")
+window.onkeypress (move_up,"Up")
+def move_right () :
+	s1.setheading (0)
+	s1.forward (2)
+
+window.onkeypress (move_right,"Right")
+
+def move_left () :
+	s1.setheading (180)
+	s1.forward (2)
+
+window.onkeypress (move_left,"Left")
+
 def move_down () :
-	s1.setheading (90)
+	s1.setheading (270)
 	s1.forward (2)
 
 window.onkeypress (move_down,"Down")
+
+def move_up():
+	s2.setheading(90)
+	s2.forward(10)
+   	 
+def move_down():
+	s2.setheading(270)
+	s2.forward(10)
+    
+def move_left():
+	s2.setheading(180)
+	s2.forward(10)
+    
+def move_right():    
+	s2.setheading(0)
+	s2.forward(10)
+
+window.onkeypress(move_up, "w")
+window.onkeypress(move_down, "s")
+
+window.onkeypress(move_left, "a")
+window.onkeypress(move_right, "d")
+
+
+
 # TODO - pick keys for each control
 
 # Section 4: Game Loop
