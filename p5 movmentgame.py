@@ -36,24 +36,24 @@ set_background("bowl of milk (1)")
 # TODO - define your controls
 def move_up () :
 	s1.setheading (90)
-	s1.forward (2)
+	s1.forward (10)
 
 window.onkeypress (move_up,"Up")
 def move_right () :
 	s1.setheading (0)
-	s1.forward (2)
+	s1.forward (10)
 
 window.onkeypress (move_right,"Right")
 
 def move_left () :
 	s1.setheading (180)
-	s1.forward (2)
+	s1.forward (10)
 
 window.onkeypress (move_left,"Left")
 
 def move_down () :
 	s1.setheading (270)
-	s1.forward (2)
+	s1.forward (10)
 
 window.onkeypress (move_down,"Down")
 
@@ -93,7 +93,11 @@ while True:
     
  	# TODO - code for automatic actions
 
-
+	if get_distance (s1,s2) < 50:
+		s1.write ("I tagged you!",font =("Arial", 15, "normal"))
+		window.update()
+		time.sleep(2)
+		break
 
 
 
